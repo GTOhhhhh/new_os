@@ -19,3 +19,7 @@ apt install firefox -y
 apt install telegram -y
 apt install atom -y
 apt install nixnote2 -y
+apt install xsel
+
+
+
