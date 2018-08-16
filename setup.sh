@@ -20,6 +20,7 @@ apt install telegram -y
 apt install atom -y
 apt install nixnote2 -y
 apt install xsel -y
+apt install redshift -y
 
 
 
