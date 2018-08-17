@@ -21,6 +21,9 @@ apt install atom -y
 apt install nixnote2 -y
 apt install xsel -y
 apt install redshift -y
+apt install python-nautilus
+
+# restart computer
 
 
 
