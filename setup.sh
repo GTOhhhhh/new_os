@@ -1,5 +1,6 @@
 #!/bin/bash
 # a simple script for automating my personal set up on a new linux box
+# execute with sudo
 
 # update
 apt update
@@ -22,6 +23,7 @@ apt install nixnote2 -y
 apt install xsel -y
 apt install redshift -y
 apt install python-nautilus
+apt install gnome-screenshot
 
 # restart computer
 
