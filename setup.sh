@@ -22,8 +22,8 @@ apt install atom -y
 apt install nixnote2 -y
 apt install xsel -y
 apt install redshift -y
-apt install python-nautilus
-apt install gnome-screenshot
+apt install python-nautilus -y
+apt install gnome-screenshot -y
 
 # restart computer
 
