@@ -15,6 +15,7 @@ sh -c 'echo "deb [arch=amd64] https://packagecloud.io/AtomEditor/atom/any/ any m
 
 # update repos and install new applications
 apt update
+apt install git
 apt install ulauncher -y
 apt install firefox -y
 apt install telegram -y
@@ -24,6 +25,8 @@ apt install xsel -y
 apt install redshift -y
 apt install python-nautilus -y
 apt install gnome-screenshot -y
+apt install zsh -y
+
 
 # restart computer
 
