@@ -15,10 +15,11 @@ sh -c 'echo "deb [arch=amd64] https://packagecloud.io/AtomEditor/atom/any/ any m
 
 # update repos and install new applications
 apt update
+apt-get update
 # apt install git
 apt install ulauncher -y
 apt install firefox -y
-apt install telegram -y
+apt-get install telegram -y
 apt install atom -y
 apt install nixnote2 -y
 apt install xsel -y
