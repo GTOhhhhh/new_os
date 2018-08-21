@@ -1,6 +1,7 @@
 #!/bin/bash
 # a simple script for automating my personal set up on a new linux box
 # execute with sudo
+# download intellij, webstorm & pycharm to
 
 # update
 apt update
@@ -29,6 +30,10 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 apt install python3-pip -y
 apt install ipython -y
 sudo -H pip3 install jupyter
+for i in /home/$USER/Downloads/*.tar.gz; do echo working on $i; sudo tar xvzf $i -C /opt/; done
+rm -r /home/$USER/Downloads/*.tar.gz
+
+
 
 
 
