@@ -1,7 +1,7 @@
 #!/bin/bash
 # a simple script for automating my personal set up on a new linux box
 # execute with sudo
-# download intellij, webstorm & pycharm to
+# download intellij, webstorm & pycharm to /home/$USER/Downloads before running
 
 # update
 apt update
