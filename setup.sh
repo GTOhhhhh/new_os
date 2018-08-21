@@ -26,6 +26,11 @@ apt install redshift -y
 apt install python-nautilus -y
 apt install gnome-screenshot -y
 apt install zsh -y
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+apt install python3-pip -y
+apt install ipython -y
+sudo -H pip3 install jupyter
+
 
 
 # restart computer
