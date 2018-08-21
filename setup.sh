@@ -16,6 +16,7 @@ sh -c 'echo "deb [arch=amd64] https://packagecloud.io/AtomEditor/atom/any/ any m
 # update repos and install new applications
 apt update
 # apt install git
+apt install openjdk-11-jdk
 apt install ulauncher -y
 apt install firefox -y
 apt-get install telegram-desktop -y
