@@ -16,6 +16,8 @@ apt update
 apt install openjdk-11-jdk -y
 apt install ulauncher -y
 # apt install firefox -y
+sudo apt update
+sudo apt install postgresql postgresql-contrib -y
 apt-get install telegram-desktop -y
 apt install atom -y
 # apt install nixnote2 -y
