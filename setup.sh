@@ -9,6 +9,7 @@ apt full-upgrade -y
 
 # add repos
 add-apt-repository ppa:agornostal/ulauncher -y
+
 # add-apt-repository ppa:nixnote/nixnote2-daily -y
 update repos and install new applications
 apt update
@@ -29,7 +30,16 @@ apt install zsh -y
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 chsh -s $(which zsh)
 apt install python3-pip -y
-apt install ipython -y
+apt install ipython -y t
+
+# install vs code
+curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
+install -o root -g root -m 644 microsoft.gpg /etc/apt/trusted.gpg.d/
+sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main" > /etc/apt/sources.list.d/vscode.list'
+apt-get install apt-transport-https
+apt-get update
+apt-get install code
+
 sudo -H pip3 install jupyter
 for i in /home/$USER/Downloads/*.tar.gz; do echo working on $i; sudo tar xvzf $i -C /opt/; done
 rm -r /home/$USER/Downloads/*.tar.gz
