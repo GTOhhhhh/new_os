@@ -11,7 +11,7 @@ apt full-upgrade -y
 add-apt-repository ppa:agornostal/ulauncher -y
 
 # add-apt-repository ppa:nixnote/nixnote2-daily -y
-update repos and install new applications
+# update repos and install new applications
 apt update
 # apt install git
 apt install openjdk-11-jdk -y
