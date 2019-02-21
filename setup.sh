@@ -32,6 +32,9 @@ chsh -s $(which zsh)
 apt install python3-pip -y
 apt install ipython -y t
 
+# install node & npm
+sudo apt install nodejs npm
+
 # install vs code
 curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
 install -o root -g root -m 644 microsoft.gpg /etc/apt/trusted.gpg.d/
