@@ -31,6 +31,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 chsh -s $(which zsh)
 apt install python3-pip -y
 apt install ipython -y t
+apt install openconnect
 
 # install node & npm
 sudo apt install nodejs npm
