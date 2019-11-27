@@ -60,6 +60,10 @@ sudo -H pip3 install jupyter
 # for i in /home/$USER/Downloads/*.tar.gz; do echo working on $i; sudo tar xvzf $i -C /opt/; done
 # rm -r /home/$USER/Downloads/*.tar.gz
 
+# appends open command to ~/.zhrc
+function open(){ nohup nautilus "$@" &; }
+echo "function open(){ nohup nautilus "$@" &; }" >> /home/$USER/.zshrc
+
 
 
 
