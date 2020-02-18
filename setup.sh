@@ -4,7 +4,7 @@
 # download intellij, webstorm & pycharm to /home/$USER/Downloads before running
 
 # update
-apt update
+apt update -y
 apt full-upgrade -y
 
 # add repos
@@ -12,19 +12,20 @@ add-apt-repository ppa:agornostal/ulauncher -y
 
 # add-apt-repository ppa:nixnote/nixnote2-daily -y
 # update repos and install new applications
-apt update
+apt update -y
 # apt install git
-apt install openjdk-11-jdk -y
+apt install default-jdk -y
 apt install ulauncher -y
 # apt install firefox -y
 sudo apt update
-sudo apt install postgresql postgresql-contrib -y
+# sudo apt install postgresql postgresql-contrib -y
 apt-get install telegram-desktop -y
-apt install atom -y
+# apt install atom -y
 # apt install nixnote2 -y
 apt install xsel -y
 apt install redshift -y
 apt install python-nautilus -y
+sudo apt install flameshot
 apt install gnome-screenshot -y
 apt install zsh -y
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
@@ -57,15 +58,11 @@ apt-get update
 apt-get install docker-ce docker-ce-cli containerd.io
 
 sudo -H pip3 install jupyter
-# for i in /home/$USER/Downloads/*.tar.gz; do echo working on $i; sudo tar xvzf $i -C /opt/; done
-# rm -r /home/$USER/Downloads/*.tar.gz
+for i in /home/$USER/Downloads/*.tar.gz; do echo working on $i; sudo tar xvzf $i -C /opt/; done
+rm -r /home/$USER/Downloads/*.tar.gz
 
 # appends open command to ~/.zhrc
 function open(){ nohup nautilus "$@" &; }
 echo "function open(){ nohup nautilus "$@" &; }" >> /home/$USER/.zshrc
-
-
-
-
 
 # restart computer
