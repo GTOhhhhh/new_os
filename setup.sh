@@ -13,9 +13,13 @@ add-apt-repository ppa:agornostal/ulauncher -y
 # add-apt-repository ppa:nixnote/nixnote2-daily -y
 # update repos and install new applications
 apt update -y
-# apt install git
 apt install default-jdk -y
 apt install ulauncher -y
+
+sudo add-apt-repository ppa:oguzhaninan/stacer -y
+sudo apt-get update
+sudo apt-get install stacer -y
+
 # apt install firefox -y
 sudo apt update
 # sudo apt install postgresql postgresql-contrib -y
