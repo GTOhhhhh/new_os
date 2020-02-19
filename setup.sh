@@ -64,7 +64,7 @@ rm -r /home/$USER/Downloads/*.tar.gz
 
 #install zsh
 apt install zsh -y
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" -y
 chsh -s $(which zsh)
 
 # appends open command to ~/.zhrc
