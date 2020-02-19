@@ -27,9 +27,6 @@ apt install redshift -y
 apt install python-nautilus -y
 sudo apt install flameshot
 apt install gnome-screenshot -y
-apt install zsh -y
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-chsh -s $(which zsh)
 apt install python3-pip -y
 apt install ipython -y t
 apt install openconnect
@@ -60,6 +57,11 @@ apt-get install code
 sudo -H pip3 install jupyter
 for i in /home/$USER/Downloads/*.tar.gz; do echo working on $i; sudo tar xvzf $i -C /opt/; done
 rm -r /home/$USER/Downloads/*.tar.gz
+
+#install zsh
+apt install zsh -y
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+chsh -s $(which zsh)
 
 # appends open command to ~/.zhrc
 function open(){ nohup nautilus "$@" &; }
