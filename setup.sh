@@ -19,6 +19,7 @@ apt install ulauncher -y
 sudo add-apt-repository ppa:oguzhaninan/stacer -y
 sudo apt-get update
 sudo apt-get install stacer -y
+sudo apt install gnome-tweaks -y
 
 # apt install firefox -y
 sudo apt update
